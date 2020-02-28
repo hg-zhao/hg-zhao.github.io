@@ -113,7 +113,7 @@ The R script is renamed as plotPCAngsd_mod_label.R and can be downloaded [here](
 
 The PCA plots do not seperate the challenge vs. reference groups. Not sure why PC1-2 generates the pattern like this, probably due to the genomic inversions, as PCA has been proposed as a method for discovering inversions. see [Li and Ralph, 2019](https://www.genetics.org/content/211/1/289) and [Ma and Amos, 2012](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040224). Same patterns were shown among wild populations.
 
-One thing I need to check is that whether the chellenge_97.txt and wild_227.txt (used for R plot creation) have the same order as the sample order in .cov.npy files. 
+One thing I need to check is that whether the chellenge_97.txt and wild_227.txt (used for R plot creation) have the same order as the sample order in .cov.npy files. The simple answer is YES, both sample files should have the same order. 
 
 An alternative way of performaing PCA is through non-linear model - [Deep generative models of genetic variation capture the effects of mutations](https://www.nature.com/articles/s41592-018-0138-4), perhaps worth a try. 
 

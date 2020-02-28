@@ -21,23 +21,23 @@ Also read counts summary here [Read_counts_summary](https://docs.google.com/spre
 
 The MultiQC can be downloaded from here (if the links does not work, copy and paste the URL to browser)
 
-[Pool1](https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool1.zip): 84 individuals, after removing negatives and 3 failed sample with reads < 200 (COH0419_043, CHO0419_047, and ARN0419_049)
-https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool1.zip
+[Pool1](https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool1.zip): 84 individuals, after removing negatives and 3 failed sample with reads < 200 (COH0419_043, CHO0419_047, and ARN0419_049)
+https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool1.zip
 
-[Pool2](https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool2.zip): 88 individuals, after removing negatives
-https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool2.zip
+[Pool2](https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool2.zip): 88 individuals, after removing negatives
+https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool2.zip
 
-[Pool3](https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool3.zip): 88 individuals, after removing negatives
-https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool3.zip
+[Pool3](https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool3.zip): 88 individuals, after removing negatives
+https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool3.zip
 
-[Pool4](https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool4.zip): 79 individuals, after removing negatives and 1 failed sample (ARN0419_039)
-https://github.com/hzz0024/hzz0024.github.io/raw/master/MultiQC_results/DelBay19_pool4.zip
+[Pool4](https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool4.zip): 79 individuals, after removing negatives and 1 failed sample (ARN0419_039)
+https://github.com/hg-zhao/hg-zhao.github.io/raw/master/MultiQC_results/DelBay19_pool4.zip
 
 - continue with pool1&2 data mapping, also begin to map pool4 sample (first come with LV0719_001AMP, a lavae pool)
 
 According to the MultiQC report, one of the individual (SR0419ch_327) in pool2 has shown odd GC content. We decided to drop this sample for current data analysis.
 
-<img src="https://hzz0024.github.io/images/2020-02-03-0.png" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/2020-02-03-0.png" alt="img" width="800"/>
 
 To run the mapping in a more efficient way, I created a new SLURM cluster.
 

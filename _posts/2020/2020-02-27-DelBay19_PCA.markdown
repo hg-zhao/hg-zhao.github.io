@@ -105,7 +105,7 @@ Rscript --verbose plotPCAngsd_mod.R -i wild_227_D100maxD450_minQ20_minMAF05_SNPe
 
 In order to label the individual ID and identify the outliers in the PCA plot, I add the "geom_text" element to the R script. 
 
-The R script is renamed as plotPCAngsd_mod_label.R and can be downloaded [here](https://hzz0024.github.io/scripts/plotPCAngsd_mod_label.R)
+The R script is renamed as plotPCAngsd_mod_label.R and can be downloaded [here](https://hg-zhao.github.io/scripts/plotPCAngsd_label.R)
 
 ---
 
@@ -121,31 +121,31 @@ Below are the results,
 
 ### PCA plots for challenge samples
 
-<img src="https://hzz0024.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_1-2_ant-page-001.jpg" alt="img" width="800"/> 
+<img src="https://hg-zhao.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_1-2_ant-page-001.jpg" alt="img" width="800"/> 
 
-<img src="https://hzz0024.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_1-2_ant-label.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_1-2_ant-label.jpg" alt="img" width="800"/>
 
-<img src="https://hzz0024.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_2-3_ant-page-001.jpg" alt="img" width="800"/> 
+<img src="https://hg-zhao.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_2-3_ant-page-001.jpg" alt="img" width="800"/> 
 
-<img src="https://hzz0024.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_2-3_ant-label.jpg" alt="img" width="800"/> 
+<img src="https://hg-zhao.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_2-3_ant-label.jpg" alt="img" width="800"/> 
 
-<img src="https://hzz0024.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_3-4_ant-page-001.jpg" alt="img" width="800"/> 
+<img src="https://hg-zhao.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_3-4_ant-page-001.jpg" alt="img" width="800"/> 
 
-<img src="https://hzz0024.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_3-4_ant-label.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/challenge_97_D49maxD200_minQ20_minMAF05_SNPe6_no97inv.PCAngsd.WGS_3-4_ant-label.jpg" alt="img" width="800"/>
 
 ### PCA plots for wild populations
 
-<img src="https://hzz0024.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_1-2-page-001.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_1-2-page-001.jpg" alt="img" width="800"/>
 
-<img src="https://hzz0024.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_1-2-label.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_1-2-label.jpg" alt="img" width="800"/>
 
-<img src="https://hzz0024.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_2-3-page-001.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_2-3-page-001.jpg" alt="img" width="800"/>
 
-<img src="https://hzz0024.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_2-3-label.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_2-3-label.jpg" alt="img" width="800"/>
 
-<img src="https://hzz0024.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_3-4-page-001.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_3-4-page-001.jpg" alt="img" width="800"/>
 
-<img src="https://hzz0024.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_3-4-label.jpg" alt="img" width="800"/>
+<img src="https://hg-zhao.github.io/images/wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_3-4-label.jpg" alt="img" width="800"/>
 
 
 

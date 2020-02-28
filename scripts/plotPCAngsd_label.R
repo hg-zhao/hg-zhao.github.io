@@ -17,10 +17,10 @@ option_list <- list(make_option(c('-i','--in_file'), action='store', type='chara
                     make_option(c('-c','--comp'), action='store', type='character', default=1-2, help='Components to plot'),
                     make_option(c('-a','--annot_file'), action='store', type='character', default=NULL, help='Annotation file with individual classification (2 column TSV with ID and ANNOTATION)'),
                     make_option(c('-o','--out_file'), action='store', type='character', default=NULL, help='Output file'),
-                    make_option(c('--x_min'), action='store', type='double', default=-10000.0, help='X-axis minimum'),
-                    make_option(c('--x_max'), action='store', type='double', default=+10000.0, help='X-axis maximum'),
-                    make_option(c('--y_min'), action='store', type='double', default=-10000.0, help='Y-axis minimum'),
-                    make_option(c('--y_max'), action='store', type='double', default=+10000.0, help='Y-axis maximum')
+                    make_option(c('--x_min'), action='store', type='double', default=0.0, help='X-axis minimum'),
+                    make_option(c('--x_max'), action='store', type='double', default=0.0, help='X-axis maximum'),
+                    make_option(c('--y_min'), action='store', type='double', default=0.0, help='Y-axis minimum'),
+                    make_option(c('--y_max'), action='store', type='double', default=0.0, help='Y-axis maximum')
 )
 opt <- parse_args(OptionParser(option_list = option_list))
 
@@ -40,8 +40,8 @@ comp <- as.numeric(strsplit(opt$comp, "-", fixed=TRUE)[[1]])
 
 # Eigenvalues
 eig <- eigen(covar, symm=TRUE);
-# Change the eigen$value file name
-write.table(eig$val, file = "eigen_values_pcangsd_wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227invSNPs_pc1-2.txt", quote = FALSE)
+
+#write.table(eig$val, file = "eigen_values_pcangsd_wild_D100maxD450_minQ20_minMAF05_SNPe6_no227invSNPs_pc1-2.txt", quote = FALSE)
 eig$val <- eig$val/sum(eig$val);
 cat(signif(eig$val, digits=3)*100,"\n");
 
@@ -50,8 +50,7 @@ PC <- as.data.frame(eig$vectors)
 colnames(PC) <- gsub("V", "PC", colnames(PC))
 PC$Pop <- factor(annot$CLUSTER)
 
-#output eig$vectors as file, Change the eigen$vector file name
-sink('eigenvectors_eigen_scores_pcangsd_wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227invSNPs_pc1-2.txt')
+#sink('eigenvectors_eigen_scores_pcangsd_wild_D100maxD450_minQ20_minMAF05_SNPe6_no227invSNPs_pc1-2.txt')
 print(PC)
 sink()
 

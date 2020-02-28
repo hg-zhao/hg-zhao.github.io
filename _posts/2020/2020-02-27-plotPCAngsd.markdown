@@ -39,11 +39,20 @@ Rscript --verbose plotPCAngsd_label.R -i wild_227_D100maxD450_minQ20_minMAF05_SN
 
 ### Important notes:
 
-1. a start run with --x_min 0 --x_max 0 --y_min 0 --y_max settings allows the plot without labels - good for visualizing overall patterns
+usage:
 
-2. may need to change the eigen$value and eigen$vactor at line 44 and 54.
+Rscript -i infile.covar -c component1-component2 -a annotation.file -o outfile.pdf --x_min minimum_x_coordinate --x_max maximum_x_coordinate --y_min minimum_y_coordinate --y_max maximum_y_coordinate 
 
-3. the annotation file is a tab-delimited text file. IID is individual ID, and CLUSTER is population ID. A example file looks like,
+An example run on my wild populations looks like this,
+
+pca_wild ryan$ Rscript --verbose plotPCAngsd_label.R -i wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.cov.npy -c 1-2 -a wild_227.txt -o wild_227_D100maxD450_minQ20_minMAF05_SNPe6_no227inv.PCAngsd.WGS_1-2.pdf --x_min 0 --x_max 0.1 --y_min -0.8 --y_max -0.4
+
+Important notes:
+
+1. the default setting is no labeling - good to visualize overall pattern
+2. at line 68, the function of “breaks” allows you to order the group names in the legend 
+3. line 44 and 54 allow you to output eigenvalue and eigenvector scores. If you need these values just uncomment these lines (and change the output names)
+4. the annotation file is a tab-delimited text file (see below)
 
 | FID  | IID | CLUSTER |
 | -----| ----| --------|
